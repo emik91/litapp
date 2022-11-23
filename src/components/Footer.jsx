@@ -37,7 +37,7 @@ export function Footer() {
               <NavLinks />
             </nav>
           </div>
-          <div className="group relative -mx-4 flex items-center self-stretch p-4 transition-colors hover:bg-gray-100 sm:self-auto sm:rounded-2xl lg:mx-0 lg:self-auto lg:p-6">
+          <div className="group relative -mx-4 flex items-center self-stretch p-4 transition-colors hover:shadow-lg sm:self-auto sm:rounded-2xl lg:mx-0 lg:self-auto lg:p-6">
             <div className="relative flex h-24 w-24 flex-none items-center justify-center">
               <QrCodeBorder className="absolute inset-0 h-full w-full stroke-gray-300 transition-colors group-hover:stroke-cyan-500" />
               <Image src={qrCode} alt="" unoptimized />
@@ -56,7 +56,7 @@ export function Footer() {
           </div>
         </div>
         <div className="flex flex-col items-center border-t border-slate-700 pt-8 pb-12 md:flex-row-reverse md:justify-between md:pt-6">
-          <p className="mt-6 mr-auto text-sm text-gray-500 md:mt-0">
+          <p className="mt-6 mr-auto text-sm text-slate-300 md:mt-0">
             &copy; Copyright {new Date().getFullYear()}. All rights reserved.
           </p>
         </div>
