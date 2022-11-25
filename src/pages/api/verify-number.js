@@ -5,7 +5,7 @@ const client = require('twilio')(
 
 export default function handler(req, res) {
   client.lookups.v1
-    .phoneNumbers(req.query.phoneNumber)
+    .phoneNumbers(req.query.phone)
     .fetch({ type: ['carrier'] })
     .then((number) => {
       res.status(200).json({ valid: true, result: number })
