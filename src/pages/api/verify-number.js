@@ -7,8 +7,8 @@ export default function handler(req, res) {
   client.lookups.v1
     .phoneNumbers(req.query.phoneNumber)
     .fetch({ type: ['carrier'] })
-    .then(() => {
-      res.status(200).json({ valid: true })
+    .then((number) => {
+      res.status(200).json({ valid: true, result: number })
     })
     .catch((err) => {
       console.log(err)
